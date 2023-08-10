@@ -1,22 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+//import Greet from "./components/Greet"
+// import Welcome from "./components/Welcome"
+// import Hello from "./components/Hello"
+//  import Message from "./components/Message"
+ import Counter from "./components/Counter"
+const  App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-    
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Hello Kishor
-        </a>
-      </header>
+      {/* <Greet />
+      <Welcome /> */}
+      {/* <Hello  name="Kishor" surName="Fawade"> <span>Latur</span> </Hello>
+      <Hello name="Sunil" surName="Fawade"> <button>Action</button> </Hello>
+      <Hello name="Piyush"  surName="Fawade" />
+
+      <Welcome name="Harsh"> <span>Test</span> </Welcome> */}
+      {/* <Message /> */}
+      <Counter />
     </div>
   );
 }
-
 export default App;
