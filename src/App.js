@@ -3,7 +3,10 @@ import './App.css';
 // import Welcome from "./components/Welcome"
 // import Hello from "./components/Hello"
 //  import Message from "./components/Message"
- import Counter from "./components/Counter"
+//  import Counter from "./components/Counter"
+//  import FunctionClick from "./components/FunctionClick"
+//  import ClassClick from "./components/ClassClick"
+ import EventBind from "./components/EventBind"
 const  App = () => {
   return (
     <div className="App">
@@ -15,7 +18,10 @@ const  App = () => {
 
       <Welcome name="Harsh"> <span>Test</span> </Welcome> */}
       {/* <Message /> */}
-      <Counter />
+      {/* <Counter /> */}
+      {/* <FunctionClick />
+      <ClassClick /> */}
+      <EventBind />
     </div>
   );
 }
