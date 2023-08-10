@@ -6,7 +6,8 @@ import './App.css';
 //  import Counter from "./components/Counter"
 //  import FunctionClick from "./components/FunctionClick"
 //  import ClassClick from "./components/ClassClick"
- import EventBind from "./components/EventBind"
+//  import EventBind from "./components/EventBind"
+ import ParentComponent from "./components/ParentComponent"
 const  App = () => {
   return (
     <div className="App">
@@ -21,7 +22,8 @@ const  App = () => {
       {/* <Counter /> */}
       {/* <FunctionClick />
       <ClassClick /> */}
-      <EventBind />
+      {/* <EventBind /> */}
+      <ParentComponent />
     </div>
   );
 }
