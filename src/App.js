@@ -1,4 +1,5 @@
 import './App.css';
+import FRParentInput from './components/FRParentInput';
 //import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
 // import Hello from "./components/Hello"
@@ -16,7 +17,9 @@ import './App.css';
   //  import LifecycleA from "./components/LifecycleA"
     // import FragmentDemo from "./components/FragmentDemo"
     // import PureComp from "./components/PureComp"
-     import ParentPureComp from "./components/ParentPureComp"
+    //  import ParentPureComp from "./components/ParentPureComp"
+    //  import RefDemo from "./components/RefDemo"
+     import FocusInputRef from "./components/FocusInputRef"
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -45,7 +48,10 @@ const  App = () => {
       {/* <LifecycleA name="kishor Fawade" /> */}
       {/* <FragmentDemo /> */}
       {/* <PureComp /> */}
-      <ParentPureComp />
+      {/* <ParentPureComp /> */}
+      {/* <RefDemo /> */}
+      {/* <FocusInputRef /> */}
+      <FRParentInput />
     </div>
   );
 }
