@@ -13,7 +13,10 @@ import './App.css';
 //  import StyleSheet from "./components/StyleSheet"
   // import Inline from "./components/Inline"
   //  import Form from "./components/Form"
-   import LifecycleA from "./components/LifecycleA"
+  //  import LifecycleA from "./components/LifecycleA"
+    // import FragmentDemo from "./components/FragmentDemo"
+    // import PureComp from "./components/PureComp"
+     import ParentPureComp from "./components/ParentPureComp"
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -39,7 +42,10 @@ const  App = () => {
       {/* <StyleSheet primary={true} /> */}
       {/* <Inline /> */}
       {/* <Form /> */}
-      <LifecycleA name="kishor Fawade" />
+      {/* <LifecycleA name="kishor Fawade" /> */}
+      {/* <FragmentDemo /> */}
+      {/* <PureComp /> */}
+      <ParentPureComp />
     </div>
   );
 }
