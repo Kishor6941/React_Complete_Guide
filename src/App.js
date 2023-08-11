@@ -11,14 +11,15 @@ import './App.css';
 //  import UserGreeting from "./components/UserGreeting"
 //  import PersonList from "./components/PersonList"
 //  import StyleSheet from "./components/StyleSheet"
-  import Inline from "./components/Inline"
-  import './components/appStyles.css'
-  import styles from './components/appStyles.module.css'
+  // import Inline from "./components/Inline"
+   import Form from "./components/Form"
+  // import './components/appStyles.css'
+  // import styles from './components/appStyles.module.css'
 const  App = () => {
   return (
     <div className="App">
-      <h1 className='error'>error</h1>
-      <h1 className={styles.success}>Success</h1>
+      {/* <h1 className='error'>error</h1>
+      <h1 className={styles.success}>Success</h1> */}
       {/* <Greet />
       <Welcome /> */}
       {/* <Hello  name="Kishor" surName="Fawade"> <span>Latur</span> </Hello>
@@ -35,7 +36,8 @@ const  App = () => {
       {/* <UserGreeting /> */}
       {/* <PersonList /> */}
       {/* <StyleSheet primary={true} /> */}
-      <Inline />
+      {/* <Inline /> */}
+      <Form />
     </div>
   );
 }
