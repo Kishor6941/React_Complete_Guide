@@ -10,8 +10,8 @@ export class Form extends Component {
          course : 'React'
       }
     }
+
     userNameHandler = (event) => {
-        console.log(event.target.value)
         this.setState({
             userName : event.target.value
         })
@@ -21,7 +21,8 @@ export class Form extends Component {
         this.setState({
             comments : event.target.value
         })
-    }   
+    }  
+     
     courseHandler = (event) => {
         this.setState({
             course : event.target.value

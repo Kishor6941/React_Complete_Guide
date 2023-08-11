@@ -12,7 +12,8 @@ import './App.css';
 //  import PersonList from "./components/PersonList"
 //  import StyleSheet from "./components/StyleSheet"
   // import Inline from "./components/Inline"
-   import Form from "./components/Form"
+  //  import Form from "./components/Form"
+   import LifecycleA from "./components/LifecycleA"
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -37,7 +38,8 @@ const  App = () => {
       {/* <PersonList /> */}
       {/* <StyleSheet primary={true} /> */}
       {/* <Inline /> */}
-      <Form />
+      {/* <Form /> */}
+      <LifecycleA name="kishor Fawade" />
     </div>
   );
 }
