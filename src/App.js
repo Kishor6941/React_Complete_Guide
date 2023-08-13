@@ -20,9 +20,11 @@ import './App.css';
 //  import ParentPureComp from "./components/ParentPureComp"
 //  import RefDemo from "./components/RefDemo"
 //  import FocusInputRef from "./components/FocusInputRef"
-    import ClickCounter from './components/ClickCounter';
-    import HoverCounter from './components/HoverCounter';
-import User from './components/User';
+//     import ClickCounter from './components/ClickCounter';
+import ComponentD from './components/ContextAPI/ComponentD';
+//     import HoverCounter from './components/HoverCounter';
+// import User from './components/User';
+import {UserProvider} from "./components/ContextAPI/UserContext"
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -57,7 +59,10 @@ const  App = () => {
       {/* <FRParentInput /> */}
       {/* <ClickCounter name="Kishor" />
       <HoverCounter name="Kishor" /> */}
-      <User render = {(isLoggedIn) => isLoggedIn ? "Kishor" : "Guest" }  />
+      {/* <User render = {(isLoggedIn) => isLoggedIn ? "Kishor" : "Guest" }  /> */}
+      <UserProvider value="Kishor">
+      <ComponentD />
+      </UserProvider>
     </div>
   );
 }
