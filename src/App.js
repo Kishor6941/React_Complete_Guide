@@ -1,4 +1,8 @@
 import './App.css';
+import DataFetching from './hooks/useEffect/DataFetching';
+import FetchSignlePost from './hooks/useEffect/FetchSignlePost';
+import HookCounterOne from './hooks/useEffect/HookCounterOne';
+import IntervalHook from './hooks/useEffect/IntervalHook';
 // import FRParentInput from './components/FRParentInput';
 //import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
@@ -21,16 +25,16 @@ import './App.css';
 //  import RefDemo from "./components/RefDemo"
 //  import FocusInputRef from "./components/FocusInputRef"
 //     import ClickCounter from './components/ClickCounter';
-import ComponentD from './components/ContextAPI/ComponentD';
+// import ComponentD from './components/ContextAPI/ComponentD';
 //     import HoverCounter from './components/HoverCounter';
 // import User from './components/User';
-import {UserProvider} from "./components/ContextAPI/UserContext"
-import PostForm from './components/HTTP/PostForm';
-import PostList from './components/HTTP/PostList';
-import CounterHook1 from './hooks/CounterHook1';
-import CounterHook2 from './hooks/CounterHook2';
-import CounterHook3 from './hooks/CounterHook3';
-import CounterHook4 from './hooks/CounterHook4';
+// import {UserProvider} from "./components/ContextAPI/UserContext"
+// import PostForm from './components/HTTP/PostForm';
+// import PostList from './components/HTTP/PostList';
+// import CounterHook1 from './hooks/useState/CounterHook1';
+// import CounterHook2 from './hooks/useState/CounterHook2';
+// import CounterHook3 from './hooks/useState/CounterHook3';
+// import CounterHook4 from './hooks/useState/CounterHook4';
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -83,7 +87,13 @@ const  App = () => {
       {/* <CounterHook1 /> */}
       {/* <CounterHook2 /> */}
       {/* <CounterHook3 /> */}
-      <CounterHook4 />
+      {/* <CounterHook4 /> */}
+
+       {/* Hooks in React (useEffect) */}
+      {/* <HookCounterOne /> */}
+      {/* <IntervalHook /> */}
+      {/* <DataFetching /> */}
+      {/* <FetchSignlePost /> */}
     </div>
   );
 }
