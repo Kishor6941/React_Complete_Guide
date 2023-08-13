@@ -1,8 +1,10 @@
-import './App.css';
-import DataFetching from './hooks/useEffect/DataFetching';
-import FetchSignlePost from './hooks/useEffect/FetchSignlePost';
-import HookCounterOne from './hooks/useEffect/HookCounterOne';
-import IntervalHook from './hooks/useEffect/IntervalHook';
+import "./App.css";
+import React from "react";
+import ComponentA from "./hooks/useContext/ComponentA";
+// import DataFetching from './hooks/useEffect/DataFetching';
+// import FetchSignlePost from './hooks/useEffect/FetchSignlePost';
+// import HookCounterOne from './hooks/useEffect/HookCounterOne';
+// import IntervalHook from './hooks/useEffect/IntervalHook';
 // import FRParentInput from './components/FRParentInput';
 //import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
@@ -35,9 +37,11 @@ import IntervalHook from './hooks/useEffect/IntervalHook';
 // import CounterHook2 from './hooks/useState/CounterHook2';
 // import CounterHook3 from './hooks/useState/CounterHook3';
 // import CounterHook4 from './hooks/useState/CounterHook4';
-  // import './components/appStyles.css'
-  // import styles from './components/appStyles.module.css'
-const  App = () => {
+// import './components/appStyles.css'
+// import styles from './components/appStyles.module.css'
+export const UserContext = React.createContext();
+export const channelContext = React.createContext();
+const App = () => {
   return (
     <div className="App">
       {/* <h1 className='error'>error</h1>
@@ -57,16 +61,30 @@ const  App = () => {
       {/* <ParentComponent /> */}
       {/* <UserGreeting /> */}
       {/* <PersonList /> */}
+
+      {/* Ways to add css in React component */}
       {/* <StyleSheet primary={true} /> */}
       {/* <Inline /> */}
+
       {/* <Form /> */}
+
+      {/* Component life cycle */}
       {/* <LifecycleA name="kishor Fawade" /> */}
+
+      {/* Fragment use to combine mutiple elements make as parent for them */}
       {/* <FragmentDemo /> */}
+
+      {/* Pure Component*/}
+
       {/* <PureComp /> */}
       {/* <ParentPureComp /> */}
+
+      {/* refs in React*/}
+
       {/* <RefDemo /> */}
       {/* <FocusInputRef /> */}
       {/* <FRParentInput /> */}
+
       {/* <ClickCounter name="Kishor" />
       <HoverCounter name="Kishor" /> */}
       {/* <User render = {(isLoggedIn) => isLoggedIn ? "Kishor" : "Guest" }  /> */}
@@ -77,24 +95,28 @@ const  App = () => {
       <ComponentD />
       </UserProvider> */}
 
-{/* Http using Axios */}
+      {/* Http using Axios */}
 
       {/* <PostList /> */}
       {/* <PostForm /> */}
 
-
- {/* Hooks in React (useState) */}
+      {/* Hooks in React (useState) */}
       {/* <CounterHook1 /> */}
       {/* <CounterHook2 /> */}
       {/* <CounterHook3 /> */}
       {/* <CounterHook4 /> */}
 
-       {/* Hooks in React (useEffect) */}
+      {/* Hooks in React (useEffect) */}
       {/* <HookCounterOne /> */}
       {/* <IntervalHook /> */}
       {/* <DataFetching /> */}
       {/* <FetchSignlePost /> */}
+      <UserContext.Provider value="Kishor">
+        <channelContext.Provider value="Kishor Channel">
+          <ComponentA />
+        </channelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
-}
+};
 export default App;
