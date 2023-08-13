@@ -1,5 +1,5 @@
 import './App.css';
-import FRParentInput from './components/FRParentInput';
+// import FRParentInput from './components/FRParentInput';
 //import Greet from "./components/Greet"
 // import Welcome from "./components/Welcome"
 // import Hello from "./components/Hello"
@@ -12,14 +12,17 @@ import FRParentInput from './components/FRParentInput';
 //  import UserGreeting from "./components/UserGreeting"
 //  import PersonList from "./components/PersonList"
 //  import StyleSheet from "./components/StyleSheet"
-  // import Inline from "./components/Inline"
-  //  import Form from "./components/Form"
-  //  import LifecycleA from "./components/LifecycleA"
-    // import FragmentDemo from "./components/FragmentDemo"
-    // import PureComp from "./components/PureComp"
-    //  import ParentPureComp from "./components/ParentPureComp"
-    //  import RefDemo from "./components/RefDemo"
-     import FocusInputRef from "./components/FocusInputRef"
+// import Inline from "./components/Inline"
+//  import Form from "./components/Form"
+//  import LifecycleA from "./components/LifecycleA"
+// import FragmentDemo from "./components/FragmentDemo"
+// import PureComp from "./components/PureComp"
+//  import ParentPureComp from "./components/ParentPureComp"
+//  import RefDemo from "./components/RefDemo"
+//  import FocusInputRef from "./components/FocusInputRef"
+    import ClickCounter from './components/ClickCounter';
+    import HoverCounter from './components/HoverCounter';
+import User from './components/User';
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -51,7 +54,10 @@ const  App = () => {
       {/* <ParentPureComp /> */}
       {/* <RefDemo /> */}
       {/* <FocusInputRef /> */}
-      <FRParentInput />
+      {/* <FRParentInput /> */}
+      {/* <ClickCounter name="Kishor" />
+      <HoverCounter name="Kishor" /> */}
+      <User render = {(isLoggedIn) => isLoggedIn ? "Kishor" : "Guest" }  />
     </div>
   );
 }
