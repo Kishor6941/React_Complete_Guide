@@ -25,6 +25,8 @@ import ComponentD from './components/ContextAPI/ComponentD';
 //     import HoverCounter from './components/HoverCounter';
 // import User from './components/User';
 import {UserProvider} from "./components/ContextAPI/UserContext"
+import PostForm from './components/HTTP/PostForm';
+import PostList from './components/HTTP/PostList';
   // import './components/appStyles.css'
   // import styles from './components/appStyles.module.css'
 const  App = () => {
@@ -60,9 +62,11 @@ const  App = () => {
       {/* <ClickCounter name="Kishor" />
       <HoverCounter name="Kishor" /> */}
       {/* <User render = {(isLoggedIn) => isLoggedIn ? "Kishor" : "Guest" }  /> */}
-      <UserProvider value="Kishor">
+      {/* <UserProvider value="Kishor">
       <ComponentD />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
