@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
-import ComponentA from "./hooks/useContext/ComponentA";
+// import ComponentA from "./hooks/useContext/ComponentA";
+// import CounterOneR from "./hooks/useReducer/CounterOneR";
 // import DataFetching from './hooks/useEffect/DataFetching';
 // import FetchSignlePost from './hooks/useEffect/FetchSignlePost';
 // import HookCounterOne from './hooks/useEffect/HookCounterOne';
@@ -37,6 +38,7 @@ import ComponentA from "./hooks/useContext/ComponentA";
 // import CounterHook2 from './hooks/useState/CounterHook2';
 // import CounterHook3 from './hooks/useState/CounterHook3';
 // import CounterHook4 from './hooks/useState/CounterHook4';
+import User from "./hooks/useMemo/User";
 // import './components/appStyles.css'
 // import styles from './components/appStyles.module.css'
 export const UserContext = React.createContext();
@@ -111,11 +113,19 @@ const App = () => {
       {/* <IntervalHook /> */}
       {/* <DataFetching /> */}
       {/* <FetchSignlePost /> */}
-      <UserContext.Provider value="Kishor">
+
+      {/* useContext Hook */}
+      {/* <UserContext.Provider value="Kishor">
         <channelContext.Provider value="Kishor Channel">
           <ComponentA />
         </channelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      {/* useReducer Hook */}
+      {/* <CounterOneR /> */}
+
+      {/* useMemo Hook */}
+        <User />
     </div>
   );
 };
