@@ -38,7 +38,11 @@ import React from "react";
 // import CounterHook2 from './hooks/useState/CounterHook2';
 // import CounterHook3 from './hooks/useState/CounterHook3';
 // import CounterHook4 from './hooks/useState/CounterHook4';
-import User from "./hooks/useMemo/User";
+// import User from "./hooks/useMemo/User";
+// import Todo from "./hooks/useCallback/Todo";
+// import FocusInput from "./hooks/useRef/FocusInput";
+// import DocTitleOne from "./hooks/Custom Hooks/DocTitleOne";
+ import FetchPosts from "./hooks/Custom Hooks/FetchPosts";
 // import './components/appStyles.css'
 // import styles from './components/appStyles.module.css'
 export const UserContext = React.createContext();
@@ -125,7 +129,18 @@ const App = () => {
       {/* <CounterOneR /> */}
 
       {/* useMemo Hook */}
-        <User />
+        {/* <User /> */}
+
+      {/* useCallback Hook */}
+        {/* <Todo /> */}
+
+      {/* useRef Hook */}
+        {/* <FocusInput /> */}
+
+      {/* custom Hook */}
+      {/* <DocTitleOne /> */}
+      <FetchPosts />
+
     </div>
   );
 };
