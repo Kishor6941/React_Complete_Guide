@@ -43,6 +43,7 @@ import React from "react";
 // import FocusInput from "./hooks/useRef/FocusInput";
 // import DocTitleOne from "./hooks/Custom Hooks/DocTitleOne";
  import FetchPosts from "./hooks/Custom Hooks/FetchPosts";
+import FetchImage from "./hooks/Custom Hooks/FetchImage";
 // import './components/appStyles.css'
 // import styles from './components/appStyles.module.css'
 export const UserContext = React.createContext();
@@ -139,7 +140,8 @@ const App = () => {
 
       {/* custom Hook */}
       {/* <DocTitleOne /> */}
-      <FetchPosts />
+      {/* <FetchPosts /> */}
+      <FetchImage />
 
     </div>
   );
