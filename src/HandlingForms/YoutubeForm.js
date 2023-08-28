@@ -27,11 +27,16 @@ const YoutubeForm = () => {
     const onSubmit = (data) => {
       console.log('Form Submitted',data);
     }
+    
+    const resetForm = () => {
+      form.reset()
+    }
   return (
     <>
       <div className="col-md-6 youtubeForm">
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <h1>YoutubeForm</h1>
+        <h1>(React Hook Form)</h1>
         <div className="form-group mt-2">
             <label className="mb-2">User Name</label>
             <input
@@ -184,11 +189,19 @@ const YoutubeForm = () => {
                 <button type="button" className="btn btn-secondary mt-2" onClick={() => append({number : ''})}>Add Phone number</button>
               </div>
              </div>
+             <div className="footer-btn">
           <div className="mt-2">
           <button type="submit" className="btn btn-primary">
             Login
           </button>
           </div>
+          <div className="mt-2">
+          <button  className="btn btn-info" onClick={resetForm}>
+            Reset
+          </button>
+          </div>  
+             </div>
+
         </form>
         <DevTool control={control} />
       </div>
