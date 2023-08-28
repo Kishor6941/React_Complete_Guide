@@ -1,0 +1,9 @@
+.youtubeForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: white;
+}
