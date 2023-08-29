@@ -78,7 +78,7 @@ const YoutubeForm = () => {
   const onError = (errors) => {
     console.log("Form Erros", errors);
   }
-  const watchForm = watch();
+  // const watchForm = watch();
   return (
     <>
       <div className="col-md-6 youtubeForm">
@@ -230,7 +230,7 @@ const YoutubeForm = () => {
                     {index > 0 && (
                       <button
                         type="button"
-                        className="btn btn-danger mt-2"
+                        className="btn btn-outline-danger mt-2"
                         onClick={() => remove(index)}
                       >
                         Remove
@@ -241,7 +241,7 @@ const YoutubeForm = () => {
               })}
               <button
                 type="button"
-                className="btn btn-secondary mt-2"
+                className="btn btn-outline-secondary mt-2"
                 onClick={() => append({ number: "" })}
               >
                 Add Phone number
@@ -273,23 +273,23 @@ const YoutubeForm = () => {
 
           <div className="footer-btn">
             <div className="mt-2">
-              <button type="submit" className="btn btn-primary" disabled = {!isDirty || !isValid}>
+              <button type="submit" className="btn btn-outline-primary" disabled = {!isDirty || !isValid}>
                 Login
               </button>
             </div>
             <div className="mt-2">
-              <button className="btn btn-info" onClick={resetForm}>
+              <button className="btn btn-outline-info" onClick={resetForm}>
                 Reset
               </button>
             </div>
             <div className="mt-2">
-              <button className="btn btn-success" onClick={getFormvalues}>
+              <button className="btn btn-outline-success" onClick={getFormvalues}>
                 getValues
               </button>
             </div>
 
             <div className="mt-2">
-              <button className="btn btn-dark" onClick={setFormvalues}>
+              <button className="btn btn-outline-dark" onClick={setFormvalues}>
                 setValues
               </button>
             </div>
